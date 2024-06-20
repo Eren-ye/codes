@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width:100%;
+    
+    
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background:transparent;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid black;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%);
+    color: black;
+    font-size: 1em;
+    pointer-events: none;
+}
+.inputbox label p{
+    left: -5px;
+}
+
+input:focus~label, input:valid~label {
+    top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 50px;
+   background: transparent;
+   outline: none;
+   border: none;
+   font-size: 1em;
+   padding: 35px 0 5px;
+   color:  black;
+    
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color:  black;
+    font-size: 1.3em;
+    top: 50px;
+}
+.forger{
+    margin: -15px 0 20px; 
+    font-size: 1em;
+    color:  black;
+    display: flex;
+    justify-content: center;
+}
+.forger label a{
+    color: black;
+    text-decoration: none;
+
+}
+.forger label a:hover{
+    text-decoration: underline;
+}
+button{
+    width:100%;
+    height: 40px;
+    border-radius: 40px;
+    background: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor:pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+   font-size: 1em;
+   color:  black;
+   text-align: center;
+   margin: 25px 0 10px;
+}
+.register a{
+    text-decoration: none;
+    color:  black;
+    font-weight: 600;
+}
+.register a:hover{
+    text-decoration: underline;
+}
